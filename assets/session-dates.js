@@ -18,7 +18,7 @@ const ATRIA_MANUAL_OVERRIDE = [
 
 const sessionInfo = {
   location: "The Parlor",
-  bring: "your phone, tablet, laptop, charger, and questions.",
+  bring: "your phone, tablet, Kindle, or laptop — or just bring yourself! Chargers are provided, so there's no need to carry one in.",
   time: "2:30 PM",
 
   recurring: {
