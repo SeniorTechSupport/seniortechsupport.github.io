@@ -538,6 +538,48 @@ const guides = [
     ]
   },
   {
+    title: "Recognize and Block a Scam Phone Call",
+    summary: "Spot common phone scam tricks, and stop that caller from reaching you again.",
+    steps: [
+      { caption: "Be cautious of callers claiming to be the IRS, Medicare, a bank, or a grandchild in trouble, especially if they rush you, ask for gift cards, or ask for personal information. Real agencies and family rarely call out of the blue demanding immediate action.",
+        img: phoneFrame(`
+        <rect x="18" y="26" width="264" height="508" fill="#0b2340"/>
+        <circle cx="150" cy="140" r="50" fill="#8fa8cf"/>
+        <text x="150" y="220" fill="#fff" font-size="20" font-weight="700" text-anchor="middle" font-family="Arial">Incoming Call</text>
+        <text x="150" y="246" fill="#cdd7e6" font-size="16" text-anchor="middle" font-family="Arial">Unknown Caller</text>
+        <rect x="40" y="270" width="220" height="60" rx="10" fill="#fdecea"/>
+        ${icoWarning(62,300,0.85)}
+        <text x="84" y="295" font-size="12" font-family="Arial" fill="#c62828" font-weight="700">Rushing you?</text>
+        <text x="84" y="313" font-size="12" font-family="Arial" fill="#c62828" font-weight="700">Asking for gift cards or info?</text>
+        <text x="150" y="360" font-size="13" text-anchor="middle" fill="#cdd7e6" font-family="Arial">That's a classic scam trick</text>
+      `) },
+      { caption: "It's okay to just hang up without saying anything else. You won't be rude by protecting yourself — real companies and family will understand, and you can always call them back using a number you already know and trust.",
+        img: phoneFrame(`
+        <rect x="18" y="26" width="264" height="508" fill="#0b2340"/>
+        <circle cx="150" cy="150" r="50" fill="#8fa8cf"/>
+        <text x="150" y="230" fill="#fff" font-size="20" font-weight="700" text-anchor="middle" font-family="Arial">Incoming Call</text>
+        <text x="150" y="256" fill="#cdd7e6" font-size="16" text-anchor="middle" font-family="Arial">Unknown Caller</text>
+        <circle cx="150" cy="460" r="34" fill="#c62828" stroke="#fff" stroke-width="4"/>
+        ${icoPhoneHandset(150,460,1.3,'#fff',135)}
+        <circle cx="150" cy="460" r="48" fill="none" stroke="#c62828" stroke-width="4"/>
+        <text x="150" y="512" fill="#fff" font-size="13" text-anchor="middle" font-family="Arial">It's okay to just hang up</text>
+      `) },
+      { caption: "Afterward, open your Recents call list, tap the ⓘ next to the number, scroll down, and tap Block this Caller. That number will never be able to call or text you again.",
+        img: phoneFrame(`
+        <rect x="18" y="26" width="264" height="508" fill="#fff"/>
+        <text x="150" y="52" fill="#173463" font-size="18" font-weight="700" text-anchor="middle" font-family="Arial">Recents</text>
+        <text x="34" y="100" font-size="15" font-family="Arial" fill="#111">+1 (555) 019-2231</text>
+        <circle cx="248" cy="92" r="13" fill="none" stroke="#2456a6" stroke-width="2"/>
+        <text x="248" y="97" font-size="13" text-anchor="middle" fill="#2456a6" font-family="Arial" font-weight="700">i</text>
+        <rect x="34" y="420" width="232" height="44" rx="10" fill="#fdecea"/>
+        <text x="150" y="447" font-size="15" font-weight="700" text-anchor="middle" fill="#c62828" font-family="Arial">Block this Caller</text>
+        <circle cx="150" cy="442" r="50" fill="none" stroke="#c62828" stroke-width="4"/>
+        <line x1="150" y1="370" x2="150" y2="396" stroke="#c62828" stroke-width="3" marker-end="url(#arrow)"/>
+        <text x="150" y="340" font-size="13" text-anchor="middle" fill="#555" font-family="Arial">Tap the ⓘ, scroll down, then tap this</text>
+      `) }
+    ]
+  },
+  {
     title: "Take a Screenshot and Share It",
     summary: "Capture what's on your screen and send it to someone in a text.",
     steps: [
@@ -886,6 +928,35 @@ const guides = [
     ]
   },
   {
+    title: "Update Your Phone's Software",
+    summary: "Keep your phone running smoothly and securely with the newest updates.",
+    steps: [
+      { caption: "Swipe down or tap the search icon, then type \"Settings\" and tap the result to open it. Searching works for finding any app — and Aiden's always happy to help if you get stuck.",
+        img: searchFrame(icoGear, '#8a8f98', 'Settings') },
+      { caption: "Tap General, then tap Software Update.",
+        img: phoneFrame(`
+        <rect x="18" y="26" width="264" height="40" fill="#173463"/>
+        <text x="150" y="52" fill="#fff" font-size="20" font-weight="700" text-anchor="middle" font-family="Arial">Settings</text>
+        <text x="34" y="110" font-size="18" font-family="Arial" fill="#111">General</text>
+        <text x="34" y="150" font-size="18" font-family="Arial" fill="#111">Software Update</text>
+        <rect x="18" y="130" width="264" height="36" fill="none" stroke="#c62828" stroke-width="4" rx="6"/>
+        <line x1="150" y1="205" x2="150" y2="172" stroke="#c62828" stroke-width="3" marker-end="url(#arrow)"/>
+        <text x="34" y="190" font-size="18" font-family="Arial" fill="#111">Storage</text>
+      `) },
+      { caption: "Tap Download & Install, then enter your passcode if asked. Keep your device plugged in and connected to Wi-Fi until it finishes — this can take a while.",
+        img: phoneFrame(`
+        <rect x="18" y="26" width="264" height="40" fill="#173463"/>
+        <text x="150" y="52" fill="#fff" font-size="18" text-anchor="middle" font-family="Arial">Software Update</text>
+        <text x="150" y="130" font-size="16" font-weight="700" text-anchor="middle" font-family="Arial" fill="#111">A new update is available</text>
+        <rect x="55" y="400" width="190" height="44" rx="22" fill="#2456a6"/>
+        <text x="150" y="427" font-size="15" font-weight="700" text-anchor="middle" fill="#fff" font-family="Arial">Download &amp; Install</text>
+        <circle cx="150" cy="422" r="48" fill="none" stroke="#c62828" stroke-width="4"/>
+        <line x1="150" y1="350" x2="150" y2="376" stroke="#c62828" stroke-width="3" marker-end="url(#arrow)"/>
+        <text x="150" y="480" font-size="13" text-anchor="middle" fill="#555" font-family="Arial">Stay plugged in and on Wi-Fi until it's done</text>
+      `) }
+    ]
+  },
+  {
     title: "Get Directions with Maps",
     summary: "Find your way somewhere new, with turn-by-turn directions read out loud.",
     steps: [
@@ -911,6 +982,35 @@ const guides = [
         <text x="150" y="451" font-size="15" font-weight="700" text-anchor="middle" fill="#fff" font-family="Arial">Start</text>
         <circle cx="150" cy="446" r="50" fill="none" stroke="#c62828" stroke-width="4"/>
         <text x="150" y="500" font-size="13" text-anchor="middle" fill="#333" font-family="Arial">Tap Start — directions are read aloud as you go</text>
+      `) }
+    ]
+  },
+  {
+    title: "Find a Lost Phone or Tablet",
+    summary: "Misplaced your device? See exactly where it is, or make it chime so you can find it.",
+    steps: [
+      { caption: "If you can't find your device, borrow a family member's phone or tablet and open the Find My app (called \"Find My Device\" on some phones).",
+        img: searchFrame(icoMapPin, '#2e9e4f', 'Find My') },
+      { caption: "You'll see a map showing exactly where your device is right now — often down to the room it's in.",
+        img: phoneFrame(`
+        <rect x="18" y="26" width="264" height="508" fill="#eaf3e6"/>
+        <rect x="18" y="26" width="264" height="300" fill="#dcebe0"/>
+        ${icoMapPin(150,150,1.8,'#2e9e4f')}
+        <rect x="34" y="370" width="232" height="90" rx="14" fill="#fff"/>
+        <text x="150" y="405" font-size="15" font-weight="700" text-anchor="middle" font-family="Arial" fill="#111">Your Device</text>
+        <text x="150" y="430" font-size="13" text-anchor="middle" font-family="Arial" fill="#555">Located a few minutes ago</text>
+        <circle cx="150" cy="150" r="42" fill="none" stroke="#c62828" stroke-width="4"/>
+        <text x="150" y="495" font-size="12" text-anchor="middle" fill="#333" font-family="Arial">The map shows exactly where it is</text>
+      `) },
+      { caption: "If it's nearby, tap Play Sound. Your device will chime loudly, even if it's set to silent, so you can follow the sound to find it.",
+        img: phoneFrame(`
+        <rect x="18" y="26" width="264" height="508" fill="#fff"/>
+        <text x="150" y="90" font-size="18" font-weight="700" text-anchor="middle" font-family="Arial" fill="#173463">Your Device</text>
+        <rect x="55" y="150" width="190" height="46" rx="23" fill="#2456a6"/>
+        <text x="150" y="179" font-size="15" font-weight="700" text-anchor="middle" fill="#fff" font-family="Arial">Play Sound</text>
+        <circle cx="150" cy="173" r="56" fill="none" stroke="#c62828" stroke-width="4"/>
+        <line x1="150" y1="110" x2="150" y2="140" stroke="#c62828" stroke-width="3" marker-end="url(#arrow)"/>
+        <text x="150" y="250" font-size="13" text-anchor="middle" fill="#555" font-family="Arial">It will chime loudly, even on silent</text>
       `) }
     ]
   }
