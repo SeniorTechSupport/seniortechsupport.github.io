@@ -239,7 +239,7 @@ const guides = [
     ]
   },
   {
-    title: "Check &amp; Reply to Email",
+    title: "Check & Reply to Email",
     summary: "Read messages from friends and family, and write back.",
     steps: [
       { caption: "Swipe down or tap the search icon, then type \"Mail\" and tap the result to see your messages. Searching works for finding any app — and Aiden's always happy to help if you get stuck.",
@@ -375,12 +375,46 @@ const guides = [
     ]
   },
   {
+    title: "Find Any App by Searching",
+    summary: "You'll need this trick to find Settings for the guide above — and it works for finding any app.",
+    steps: [
+      { caption: "From your Home Screen (where your app icons are), put a finger near the middle of the screen and swipe straight down. This opens the search bar.",
+        img: phoneFrame(`
+        <rect x="18" y="26" width="264" height="508" fill="#f4f6fa"/>
+        <rect x="18" y="26" width="264" height="24" fill="#173463"/>
+        <text x="150" y="43" fill="#fff" font-size="12" text-anchor="middle" font-family="Arial">9:41</text>
+        <rect x="44" y="88" width="50" height="50" rx="12" fill="#2e9e4f"/>
+        <rect x="125" y="88" width="50" height="50" rx="12" fill="#2456a6"/>
+        <rect x="206" y="88" width="50" height="50" rx="12" fill="#c9893a"/>
+        <rect x="44" y="158" width="50" height="50" rx="12" fill="#8a8f98"/>
+        <rect x="125" y="158" width="50" height="50" rx="12" fill="#6a4fb6"/>
+        <rect x="206" y="158" width="50" height="50" rx="12" fill="#2e9e4f"/>
+        <line x1="150" y1="236" x2="150" y2="330" stroke="#c62828" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+        <text x="150" y="372" font-size="15" font-weight="700" text-anchor="middle" font-family="Arial" fill="#173463">Swipe Down from the Middle</text>
+        <text x="150" y="394" font-size="13" text-anchor="middle" font-family="Arial" fill="#555">of your Home Screen</text>
+      `) },
+      { caption: "Type just a few letters of the app's name — like \"Set\" for Settings. You don't need to spell it perfectly.",
+        img: phoneFrame(`
+        <rect x="18" y="26" width="264" height="508" fill="#f4f6fa"/>
+        <text x="150" y="58" fill="#173463" font-size="16" font-weight="700" text-anchor="middle" font-family="Arial">Search</text>
+        <rect x="34" y="76" width="232" height="44" rx="22" fill="#fff" stroke="#2456a6" stroke-width="2.5"/>
+        <circle cx="58" cy="98" r="7" fill="none" stroke="#555" stroke-width="2"/>
+        <line x1="63" y1="103" x2="68" y2="108" stroke="#555" stroke-width="2" stroke-linecap="round"/>
+        <text x="78" y="104" font-size="17" font-family="Arial" fill="#173463" font-weight="700">Set</text>
+        <line x1="104" y1="88" x2="104" y2="108" stroke="#173463" stroke-width="2"/>
+        <text x="150" y="420" font-size="13" text-anchor="middle" fill="#555" font-family="Arial">Just a few letters is enough</text>
+      `) },
+      { caption: "Tap the result to open it. This trick works for finding Settings — or any app — on your phone or tablet. Aiden's always happy to help too.",
+        img: searchFrame(icoGear, '#8a8f98', 'Settings') }
+    ]
+  },
+  {
     title: "Make Text Bigger",
     summary: "Make everything on your screen easier to read.",
     steps: [
       { caption: "Swipe down or tap the search icon, then type \"Settings\" and tap the result to open it. Searching works for finding any app — and Aiden's always happy to help if you get stuck.",
         img: searchFrame(icoGear, '#8a8f98', 'Settings') },
-      { caption: "Tap General, then tap Display &amp; Brightness.",
+      { caption: "Tap General, then tap Display & Brightness.",
         img: phoneFrame(`
         <rect x="18" y="26" width="264" height="40" fill="#173463"/>
         <text x="150" y="52" fill="#fff" font-size="20" font-weight="700" text-anchor="middle" font-family="Arial">Settings</text>
@@ -879,40 +913,6 @@ const guides = [
         <text x="150" y="500" font-size="13" text-anchor="middle" fill="#333" font-family="Arial">Tap Start — directions are read aloud as you go</text>
       `) }
     ]
-  },
-  {
-    title: "Find Any App by Searching",
-    summary: "Can't find an app on your Home Screen? Searching is often faster than hunting for icons.",
-    steps: [
-      { caption: "From your Home Screen (where your app icons are), put a finger near the middle of the screen and swipe straight down. This opens the search bar.",
-        img: phoneFrame(`
-        <rect x="18" y="26" width="264" height="508" fill="#f4f6fa"/>
-        <rect x="18" y="26" width="264" height="24" fill="#173463"/>
-        <text x="150" y="43" fill="#fff" font-size="12" text-anchor="middle" font-family="Arial">9:41</text>
-        <rect x="44" y="88" width="50" height="50" rx="12" fill="#2e9e4f"/>
-        <rect x="125" y="88" width="50" height="50" rx="12" fill="#2456a6"/>
-        <rect x="206" y="88" width="50" height="50" rx="12" fill="#c9893a"/>
-        <rect x="44" y="158" width="50" height="50" rx="12" fill="#8a8f98"/>
-        <rect x="125" y="158" width="50" height="50" rx="12" fill="#6a4fb6"/>
-        <rect x="206" y="158" width="50" height="50" rx="12" fill="#2e9e4f"/>
-        <line x1="150" y1="236" x2="150" y2="330" stroke="#c62828" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
-        <text x="150" y="372" font-size="15" font-weight="700" text-anchor="middle" font-family="Arial" fill="#173463">Swipe Down from the Middle</text>
-        <text x="150" y="394" font-size="13" text-anchor="middle" font-family="Arial" fill="#555">of your Home Screen</text>
-      `) },
-      { caption: "Type just a few letters of the app's name — like \"Cam\" for Camera. You don't need to spell it perfectly.",
-        img: phoneFrame(`
-        <rect x="18" y="26" width="264" height="508" fill="#f4f6fa"/>
-        <text x="150" y="58" fill="#173463" font-size="16" font-weight="700" text-anchor="middle" font-family="Arial">Search</text>
-        <rect x="34" y="76" width="232" height="44" rx="22" fill="#fff" stroke="#2456a6" stroke-width="2.5"/>
-        <circle cx="58" cy="98" r="7" fill="none" stroke="#555" stroke-width="2"/>
-        <line x1="63" y1="103" x2="68" y2="108" stroke="#555" stroke-width="2" stroke-linecap="round"/>
-        <text x="78" y="104" font-size="17" font-family="Arial" fill="#173463" font-weight="700">Cam</text>
-        <line x1="113" y1="88" x2="113" y2="108" stroke="#173463" stroke-width="2"/>
-        <text x="150" y="420" font-size="13" text-anchor="middle" fill="#555" font-family="Arial">Just a few letters is enough</text>
-      `) },
-      { caption: "Tap the result to open it. This trick works for finding any app on your phone or tablet — and Aiden's always happy to help too.",
-        img: searchFrame(icoCamera, '#8a8f98', 'Camera') }
-    ]
   }
 ];
 let currentGuide = 0, currentStep = 0;
@@ -932,7 +932,7 @@ function renderThumb(idx){
     </div>
   </div>`;
 }
-const featuredGuideIndexes = new Set([1,4,6,7,8,9]);
+const featuredGuideIndexes = new Set([1,4,7,8,9,10]);
 document.getElementById('guideGrid').innerHTML = guides
   .map((g,i)=> featuredGuideIndexes.has(i) ? '' : renderThumb(i))
   .join('');
