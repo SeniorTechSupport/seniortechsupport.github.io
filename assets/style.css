@@ -169,7 +169,7 @@ body.contrast .help-form input,body.contrast .help-form select,body.contrast .he
 .past-sessions > details > summary { color: var(--muted); font-size: calc(18px * var(--font-scale)); }
 
 
-/* Shared Senior Technology Support Program refinements */
+/* Shared Senior Technology Support refinements */
 .section-kicker{display:inline-block;background:var(--sage);color:var(--sage-dark);padding:7px 14px;border-radius:999px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:calc(14px * var(--font-scale));margin-bottom:12px}
 .shared-help-strip{background:#fff;border:1px solid #d9d0c1;border-left:8px solid var(--sage-dark);border-radius:20px;padding:22px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;box-shadow:0 5px 16px rgba(0,0,0,.06)}
 .shared-help-strip h3{color:var(--navy);margin:0 0 6px;font-size:calc(24px * var(--font-scale))}.shared-help-strip p{margin:0;max-width:690px}
