@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /atria/
+
+Sitemap: https://seniortechsupport.github.io/sitemap.xml
